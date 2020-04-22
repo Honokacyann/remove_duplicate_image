@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>duplicateimage</Name>
     <RootNamespace>duplicateimage</RootNamespace>
+    <InterpreterId>CondaEnv|CondaEnv|picture</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +23,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="duplicateimage.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|picture" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
